@@ -1,0 +1,47 @@
+<div class="text-center">  
+    <h3 class="bb-30"><i class="fa fa-graduation-cap"></i> Education</h3>
+
+    <div class="col-md-6">
+        <div class="education-card">
+            <h3>Washington University in St. Louis</h3>
+            <h4>Bachelor of Applied Science (B.A.Sc.), 2013-2017</h4>
+            <h4>Major: Computer Science | Minor: Design</h4>
+            <h4>GPA: 3.72</h4>
+            <h4>Course work:</h4>
+            <p>Algorithms and Data Structures (Java)</p>
+            <p>Object Oriented Software Development (C++)</p>
+            <p>Rapid Prototype Development (Web)</p>
+            <p>Fair Division in Theory & Practice (Java)</p>
+            <p>Object Oriented Software Development (C++)</p>
+            <p>Digital Logic & Computer Design (VHDL)</p>
+            <p>Communication Design 1</p>
+            <p>History of Advertising</p>
+            <p>Advertising in the Digital Age</p>
+            <p>Advertising 1</p>
+            <p>Introduction to Linguistics</p>
+            <p>4 semesters of piano lessons</p>
+        </div>
+    </div>
+
+    <div>
+    {{#each model as |school|}}
+    {{!-- <div class="row">
+        <div class="col-md-offset-3 col-md-6 col-xs-12"> --}}
+            <div class="education-card col-md-4 col-sm-6 col-xs-12">
+                <h4>{{school.name}}</h4>
+                <h5>{{school.degree}}, {{school.duration}}</h5>
+                {{#if school.major}}
+                <p>Major: {{school.major}} | Minor: {{school.minor}}</p>
+                <p>GPA: {{school.gpa}}</p>
+                {{/if}}
+                {{#if school.location}}
+                <h4>{{school.location}}</h4>
+                {{/if}}
+            </div>
+        {{!-- </div>
+    </div> --}}
+    {{/each}}
+    </div>
+</div>
+
+{{outlet}}
