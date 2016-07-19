@@ -1,0 +1,225 @@
+
+$light-blue: #5BC0EB;
+$light-red: #FE5F55;
+$light-green: #9BC53D;
+$orange: #FA7921;
+
+
+
+@font-face{
+    font-family: "Avenir Book";
+    src: url(../fonts/AvenirLTStd-Book.otf);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.topnav{
+  color: black;
+  background-color: none;
+  padding: 10px 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav1.active, .nav1:hover{
+  color: $light-blue;
+}
+
+.nav2.active, .nav2:hover{
+  color: $light-red;
+}
+
+.nav3.active, .nav3:hover{
+  color: $light-green;
+}
+
+.nav4.active, .nav4:hover{
+  color: $orange;
+}
+
+.nav5.active, .nav5:hover{
+  color: #FBCA20;
+}
+
+.nav6.active, .nav6:hover{
+  color: #2AD0B8;
+}
+
+.music-color{
+ color: #FBCA20; 
+}
+
+.photo-color{
+  color: #9BC53D;
+}
+
+.icon-block{
+    display: inline;
+    float: left;
+}
+
+.bar{
+  padding: 10px;
+  /*height: 20px;*/
+  /*padding: 1px 5px;*/
+}
+
+.music-bar{
+  border-bottom: 3px solid #FBCA20;
+}
+
+.photo-bar{
+  background-color: #9BC53D;
+}
+
+.education-bar{
+  background-color: $light-blue;
+}
+
+.contact-bar{
+  background-color: #2AD0B8;
+}
+
+.nav-primary{
+  color: black;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.nav>li>a:focus,.nav>li>a:hover{
+  /*border-bottom: 2px solid black;*/
+  background-color: transparent;
+  /*color: black;*/
+}
+
+.thumb{
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+}
+
+.icon{
+  width: 75px;
+  height: 75px;
+  margin: 25px auto;
+  -webkit-filter: grayscale(100%);
+  transition-property: grayscale, filter, -webkit-filter, -o-filter;
+  transition-duration: 0.7s;
+}
+
+.icon:hover{
+  width: 75px;
+  height: 75px;
+  margin: 25px auto;
+  -webkit-filter: grayscale(0%);
+  transition-property: grayscale, filter, -webkit-filter, -o-filter;
+  transition-duration: 0.7s;
+}
+
+.wall-thumb{
+  width: 9.15em;
+  margin-right: -4px;
+}
+
+.thumb:hover{
+  cursor: pointer;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.home-card{
+  margin-top: 50px;
+  background-color: pink;
+}
+
+.bb-home:hover{
+  text-decoration: none;
+  color: darkred;
+  border-bottom: 2px solid darkred;
+}
+
+.img-parent{
+  margin-top: 5%;
+}
+
+.contact-info{
+  margin-top: 35vh;
+  font-size: 30px;
+}
+.contact-info a{
+  color: black;
+}
+.contact-info a:hover{
+  color: #2AD0B8;
+}
+
+.img-profile{
+  border-radius: 4%;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.education-card{
+  /*width: 400px;*/
+  padding: 10px;
+  /*display: inline-block;*/
+  /*background-color: #32a26a;*/
+}
+
+.experience-card{
+  padding: 5px 10px;
+  box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fedfdd;
+}
+
+.header-text{
+    font-size: 15px;
+    line-height: 200%;
+}
+
+h3 {
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+.bb-15{
+    margin-bottom: 15px;
+}
+
+.bb-30{
+    margin-bottom: 30px;
+}
+
+.bb-60{
+    margin-bottom: 60px;
+}
+
+.tb-30{
+    margin-top: 30px;
+}
+
+.navbar-brand{
+  font-size: 30px;
+  font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  padding: 20px;
+  border-bottom: 2px solid white;
+  &:hover{
+    color: black;
+  }
+}

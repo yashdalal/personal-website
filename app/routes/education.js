@@ -6,7 +6,7 @@ var school = [{
 	duration: '2013-2017',
 	major: 'Computer Science',
 	minor: 'Design',
-	gpa: '3.72'
+	gpa: '3.74'
 },{
 	name: 'Dhirubhai Ambani International School',
 	degree: 'International Baccalaureate',

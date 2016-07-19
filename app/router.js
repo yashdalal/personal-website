@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('projects');
   this.route('contact');
   this.route('music');
+  this.route('skills');
 });
 
 export default Router;
