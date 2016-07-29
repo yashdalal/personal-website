@@ -1,10 +1,15 @@
 
+
+/* Colours */
+
 $light-blue: #5BC0EB;
 $light-red: #FE5F55;
 $light-green: #9BC53D;
 $orange: #FA7921;
+$yellow-orange: #FBCA20;
+$blue-green: #2AD0B8;
 
-
+/* Fonts */
 
 @font-face{
     font-family: "Avenir Book";
@@ -19,6 +24,7 @@ body {
 
 body {
   font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #fbfbfb;
 }
 
 .topnav{
@@ -46,19 +52,19 @@ body {
 }
 
 .nav5.active, .nav5:hover{
-  color: #FBCA20;
+  color: $yellow-orange;
 }
 
 .nav6.active, .nav6:hover{
-  color: #2AD0B8;
+  color: $blue-green;
 }
 
 .music-color{
- color: #FBCA20; 
+ color: $yellow-orange; 
 }
 
 .photo-color{
-  color: #9BC53D;
+  color: $light-green;
 }
 
 .icon-block{
@@ -73,7 +79,7 @@ body {
 }
 
 .music-bar{
-  border-bottom: 3px solid #FBCA20;
+  border-bottom: 3px solid $yellow-orange;
 }
 
 .photo-bar{
@@ -100,6 +106,35 @@ body {
   background-color: transparent;
   /*color: black;*/
 }
+
+/* Education Page */
+
+.education {
+  h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .inc-line-height {
+    p {
+      margin-bottom: 7%;
+    }
+  }
+}
+
+/* Experience Page */
+
+.experience {
+  h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  .quote {
+    font-size: 15px;
+  }
+}
+
+
 
 .thumb{
   width: 300px;
@@ -158,18 +193,29 @@ body {
 .contact-info{
   margin-top: 35vh;
   font-size: 30px;
+  a {
+    color: #002F83;
+    &:hover {
+      color: #2AD0B8;
+    }
+  }
 }
-.contact-info a{
-  color: black;
-}
-.contact-info a:hover{
-  color: #2AD0B8;
+
+.index-contact {
+  margin-top: 5%;
+  font-size: 25px;
+  a {
+    color: #002F83;
+    &:hover {
+    }
+  }
 }
 
 .img-profile{
-  border-radius: 4%;
-  width: 350px;
+  border-radius: 50%;
+  width: 90%;
   margin: 0 auto;
+  border: 2px solid #002F83;
 }
 
 .education-card{
@@ -186,8 +232,13 @@ body {
 }
 
 .header-text{
-    font-size: 15px;
-    line-height: 200%;
+  font-size: 16px;
+  line-height: 200%;
+  color: #002F83;
+  font-weight: 200;
+  a {
+    color: #0051DF;
+  }
 }
 
 h3 {
@@ -209,6 +260,20 @@ h3 {
 
 .tb-30{
     margin-top: 30px;
+}
+
+.temp-header {
+  font-size: 60px;
+  font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #002F83;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  padding: 20px;
+  padding-top: 50px;
+  &:hover{
+    color: #002F83;
+    text-decoration: none;
+  }
 }
 
 .navbar-brand{

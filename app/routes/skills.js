@@ -19,7 +19,7 @@ var icons = [
   "assets/images/skill-icons/wordpress.png",
   "assets/images/skill-icons/soccer.png",
   "assets/images/skill-icons/taekwondo.png"
-]
+];
 
 export default Ember.Route.extend({
   model(){
