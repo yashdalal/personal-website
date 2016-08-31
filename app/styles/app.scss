@@ -1,13 +1,13 @@
-
-
 /* Colours */
 
 $light-blue: #5BC0EB;
+$dark-blue: #002F83;
 $light-red: #FE5F55;
 $light-green: #9BC53D;
 $orange: #FA7921;
 $yellow-orange: #FBCA20;
 $blue-green: #2AD0B8;
+$dark-gray: #353535;
 
 /* Fonts */
 
@@ -27,44 +27,27 @@ body {
   background-color: #fbfbfb;
 }
 
+
+
 .topnav{
-  color: black;
+  color: $dark-gray;
   background-color: none;
   padding: 10px 0;
   margin-bottom: 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid $dark-gray;
 }
 
-.nav1.active, .nav1:hover{
-  color: $light-blue;
-}
-
-.nav2.active, .nav2:hover{
-  color: $light-red;
-}
-
-.nav3.active, .nav3:hover{
-  color: $light-green;
-}
-
-.nav4.active, .nav4:hover{
-  color: $orange;
-}
-
-.nav5.active, .nav5:hover{
-  color: $yellow-orange;
-}
-
-.nav6.active, .nav6:hover{
-  color: $blue-green;
-}
-
-.music-color{
- color: $yellow-orange; 
-}
-
-.photo-color{
-  color: $light-green;
+.navbar-brand{
+  font-size: 50px;
+  font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: $dark-gray;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  margin-top: 2%;
+  &:hover{
+    color: $dark-gray;
+    text-decoration: none;
+  }
 }
 
 .icon-block{
@@ -95,10 +78,13 @@ body {
 }
 
 .nav-primary{
-  color: black;
+  color: gray;
   letter-spacing: 0.1em;
   font-weight: 500;
   margin: 0 5px;
+  &:hover, &:focus, &.active {
+    color: black;
+  }
 }
 
 .nav>li>a:focus,.nav>li>a:hover{
@@ -140,24 +126,32 @@ body {
   width: 300px;
   height: 200px;
   margin: 15px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  transition-property: grayscale, filter, -webkit-filter, -o-filter;
+  transition-duration: 1s;
+  &:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+  }
 }
 
 .icon{
   width: 75px;
   height: 75px;
   margin: 25px auto;
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
   transition-property: grayscale, filter, -webkit-filter, -o-filter;
   transition-duration: 0.7s;
-}
-
-.icon:hover{
-  width: 75px;
-  height: 75px;
-  margin: 25px auto;
-  -webkit-filter: grayscale(0%);
-  transition-property: grayscale, filter, -webkit-filter, -o-filter;
-  transition-duration: 0.7s;
+  &:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+  }
 }
 
 .wall-thumb{
@@ -204,10 +198,15 @@ body {
 .index-contact {
   margin-top: 5%;
   font-size: 25px;
+  transition: font-size 1s;
+  -webkit-transition: font-size 1s;
+  -moz-transition: font-size 1s;
   a {
-    color: #002F83;
-    &:hover {
-    }
+    color: $dark-gray;
+    // spacing gets messed up
+    // &:hover {
+    //   font-size: 23px;
+    // }
   }
 }
 
@@ -215,7 +214,7 @@ body {
   border-radius: 50%;
   width: 90%;
   margin: 0 auto;
-  border: 2px solid #002F83;
+  border: 2px solid $dark-gray;
 }
 
 .education-card{
@@ -234,10 +233,11 @@ body {
 .header-text{
   font-size: 16px;
   line-height: 200%;
-  color: #002F83;
+  color: $dark-gray;
   font-weight: 200;
   a {
-    color: #0051DF;
+    color: black;
+    font-weight: 400;
   }
 }
 
@@ -262,28 +262,3 @@ h3 {
     margin-top: 30px;
 }
 
-.temp-header {
-  font-size: 60px;
-  font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #002F83;
-  font-weight: 100;
-  letter-spacing: 0.1em;
-  padding-top: 50px;
-  &:hover{
-    color: #002F83;
-    text-decoration: none;
-  }
-}
-
-.navbar-brand{
-  font-size: 30px;
-  font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: black;
-  font-weight: 300;
-  letter-spacing: 0.1em;
-  padding: 20px;
-  border-bottom: 2px solid white;
-  &:hover{
-    color: black;
-  }
-}

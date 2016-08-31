@@ -2,69 +2,69 @@ import Ember from 'ember';
 
 var items = [{
 	src: 'assets/images/photogallery/bg-faded.jpg',
-    w: 754,
-    h: 400,
-    title: 'Weird kitty is pretty weird',
+    w: 1000,
+    h: 588.25,
+    title: 'Chicago Skyline, 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/chicagonight.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Chicago Nighttime, 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/brookingsarch.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Brookings Arch, Washington University in St. Louis, 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/romeskyline.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Roman Skyline, 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/romesunset.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Sunset at Plaza ______ in Rome, 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/venicelights.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Venice Lights, 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/italycomo.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Lake Como, Italy 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/churchgatestation.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Churchgate Station, Bombay 2015',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/mumbairickshaw.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Autorickshaw in Bandra, Bombay 2015',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/newyorksilhouette.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'New York silhouette from Central Park, NYC 2014',
     msrc: ''
 },{
 	src: 'assets/images/photogallery/arcadefire.jpg',
     w: 600,
     h: 400,
-    title: 'Weird kitty is pretty weird',
+    title: 'Arcade Fire Concert at Scottrade Center, St. Louis 2014',
     msrc: ''
 }];
 
