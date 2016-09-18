@@ -25,25 +25,56 @@ body {
 body {
   font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #fbfbfb;
+  a {
+    color: $dark-gray;
+    &:hover {
+      color: black;
+    }
+  }
 }
 
+h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+h4 {
+  font-weight: 300;
+  font-size: 16px;
+}
 
+.hr-sm {
+  width: 50%;
+}
+
+.main {
+  padding-bottom: 50px;
+}
 
 .topnav{
   color: $dark-gray;
-  background-color: none;
-  padding: 10px 0;
   margin-bottom: 0;
-  border-bottom: 1px solid $dark-gray;
+  padding: 15px 0;
+}
+
+.navbar-toggle {
+  margin-top: 18px;
+  padding:0;
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: gray;
+    border-radius: 1px;
+  }
 }
 
 .navbar-brand{
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Avenir Book","Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: $dark-gray;
+  color: gray;
   font-weight: 100;
-  letter-spacing: 0.1em;
-  margin-top: 2%;
+  letter-spacing: 0.05em;
   &:hover{
     color: $dark-gray;
     text-decoration: none;
@@ -60,30 +91,31 @@ body {
   /*height: 20px;*/
   /*padding: 1px 5px;*/
 }
+.navbar-nav {
+  li > a {
+    padding: 0 15px;
+  }
+  .nav-primary{
+    color: $dark-gray;
+    font-weight: 300;
+    margin: 15px 5px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    &:not(.active) {
+      color: gray;
+    }
+    &:hover, &:focus, &.active {
+      color: $dark-gray;
+    }
+    &.active {
+      font-weight: 400;
+    }
+    p {
+      font-size: 10px;
+      margin: 0;
+      letter-spacing: 0.05em;
+    }
 
-.music-bar{
-  border-bottom: 3px solid $yellow-orange;
-}
-
-.photo-bar{
-  background-color: #9BC53D;
-}
-
-.education-bar{
-  background-color: $light-blue;
-}
-
-.contact-bar{
-  background-color: #2AD0B8;
-}
-
-.nav-primary{
-  color: gray;
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  margin: 0 5px;
-  &:hover, &:focus, &.active {
-    color: black;
   }
 }
 
@@ -98,7 +130,7 @@ body {
 .education {
   h4 {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 14px;
   }
   .inc-line-height {
@@ -111,31 +143,58 @@ body {
 /* Experience Page */
 
 .experience {
-  h3 {
-    margin-top: 40px;
-    margin-bottom: 10px;
+  h4 {
+    margin-bottom: 30px;
   }
   .quote {
     font-size: 15px;
   }
+  .experience-card{
+    padding: 10px;
+    background-color: #ffeceb;
+    border-radius: 1px;
+    transition: background-color 1s;
+    font-weight: 300;
+    font-size: 18px;
+    &:hover, .active-experience{
+      box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.19);
+      cursor: pointer;
+      background-color: #ffcdca;
+    }
+  }
 }
 
+/* Music Page */
 
+.music {
+  h4 {
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .thumb-container {
+    text-align: center;
+    .wall-thumb {
+      text-align: left;
+      width: 12em;
+      margin-right: -4px;
+    }
+  }
+}
 
 .thumb{
   width: 300px;
   height: 200px;
   margin: 15px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  transition-property: grayscale, filter, -webkit-filter, -o-filter;
-  transition-duration: 1s;
-  &:hover {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-  }
+  // filter: grayscale(100%);
+  // -webkit-filter: grayscale(100%);
+  // -moz-filter: grayscale(100%);
+  // transition-property: grayscale, filter, -webkit-filter, -o-filter;
+  // transition-duration: 1s;
+  // &:hover {
+  //   filter: grayscale(0);
+  //   -webkit-filter: grayscale(0);
+  //   -moz-filter: grayscale(0);
+  // }
 }
 
 .icon{
@@ -152,15 +211,6 @@ body {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
   }
-}
-
-.wall-thumb{
-  width: 9.15em;
-  margin-right: -4px;
-}
-
-.thumb:hover{
-  cursor: pointer;
 }
 
 .text-vertical-center {
@@ -224,14 +274,8 @@ body {
   /*background-color: #32a26a;*/
 }
 
-.experience-card{
-  padding: 5px 10px;
-  box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  background-color: #fedfdd;
-}
-
 .header-text{
-  font-size: 16px;
+  font-size: 15px;
   line-height: 200%;
   color: $dark-gray;
   font-weight: 200;
@@ -241,9 +285,8 @@ body {
   }
 }
 
-h3 {
-  font-weight: 500;
-  margin: 40px 0;
+.white {
+  color: white;
 }
 
 .bb-15{

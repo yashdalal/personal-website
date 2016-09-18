@@ -1,37 +1,23 @@
-<div class="experience col-md-10 col-md-offset-1">
-    <h3 class="text-center">Experience</h3>
-    <p class="text-center quote">"I was born not knowing and have had only a little time to change that here and there." - Richard Feynman</p>
-    <div class="col-md-6">
-        <div class="info" id="info">
-            <h3>Webmaster</h3>
-            <h4>IDEA Labs National Network</h4>
-            <h4><i class="fa fa-map-marker"></i> St. Louis | <i class="fa fa-calendar"></i> October 2015 - present</h4>
-            <p>As webmaster of the IDEA Labs National network, I attend weekly board meetings and collaborate with the leadership to individually manage the server, domains, front-end and back-end of the website.
-            I am currently working on redesigning the IDEA Labs website to change the focus of IDEA Labs from a local chapter to a national network of groups and make it more user-friendly in order to attract more sponsors.</p>
-            <a href="#idealabs">Click to see my work on IDEA Labs</a>
+<div class="experience">
+    <h3 class="text-center">experience</h3>
+    <h4 class="text-center">"I was born not knowing and have had only a little time to change that here and there." - Richard Feynman</h4>
+    <hr class="hr-sm">
+    <div class="experience col-md-10 col-md-offset-1">    
+        <div class="col-md-6">
+            <div class="info" id="info">
+                <h3 id="job-title"></h3>
+                <h5 id="job-company">Pick from the options on the right to get started</h5>
+                <h5 id="job-location-and-date"></h5>
+                <p id="job-description" class="header-text"></p>
+                {{!-- <a href="#idealabs">Click to see my work on IDEA Labs</a> --}}
+            </div>
         </div>
-    </div>
-    <div class="col-md-6 tb-30">
-        <div class="row " >
-            <h4>Click below to learn more</h4>
-        </div>
-        <div class="row bb-15 experience-card" id="">
-            <h4><strong>Webmaster</strong> at IdeaLabs National Network</h4>
-        </div>
-        <div class="row bb-15 experience-card">
-            <h4><strong>Co-Founder</strong> at Layman Technologies</h4>
-        </div>
-        <div class="row bb-15 experience-card">
-            <h4><strong>Software Engineering Intern</strong> at LaunchCode</h4>
-        </div>
-        <div class="row bb-15 experience-card">
-            <h4><strong>Senior Online Editor</strong> at Student Life, Newspaper</h4>
-        </div>
-        <div class="row bb-15 experience-card">
-            <h4><strong>Lead Teaching Assistant, CSE 131</strong> at Computer Science Department</h4>
-        </div>
-        <div class="row bb-15 experience-card">
-            <h4><strong>Head Teaching Assistant, CSE 507</strong> at Computer Science Department</h4>
+        <div class="col-md-6 tb-30">
+            {{#each model as |job|}}
+            <div class="row bb-15 experience-card" {{action "selectJob" job on="click"}}>
+                {{job.title}} at {{job.company}}
+            </div>
+            {{/each}}
         </div>
     </div>
 </div>
@@ -81,14 +67,6 @@
             <p>As senior online editor for Student Life, I managed  the website using Wordpress and the LAMP stack, and redesign and add features to the website as required.
             I am currently working on a new iPhone app for the newspaper in order to help retain and increase readership in an audience that is increasingly moving online.
             Link: www.studlife.com</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-offset-2 col-md-8 col-xs-10 col-xs-offset-1">
-            <h2>Lead Teaching Assistant, CSE 131</h2>
-            <h3>Computer Science Department, Washington University in St. Louis</h3>
-            <h4><i class="fa fa-map-marker"></i> St. Louis | <i class="fa fa-calendar"></i> August 2015 - December 2015</h4>
-            <p>In addition to the responsibilities of a teaching assistant, I guided and mentored 6 new teaching assistants, was a "point person" for specific questions on the exams and was involved in organizing regrades for students.</p>
         </div>
     </div>
     <div class="row">
