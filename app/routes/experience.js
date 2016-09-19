@@ -5,13 +5,13 @@ var jobs = [{
   company: "LaunchCode",
   location: "St. Louis",
   date: "June 2016 - August 2016",
-  description: "As a LaunchCode intern, I successfully began and completed a number of projects. The implemented HackerRank’s API on the Rails back end to create tests and register responses Created community pages for LaunchCode’s collaboration with TechHire, a government initiative Created mockups for the Education platform and implemented them in Bootstrap/CSS Extensively tested work using Rspec"
+  description: "As a LaunchCode intern, I successfully began and completed a number of projects. I implemented HackerRank’s API on the Rails back end to create tests and register responses, extensively testing my work using Rspec. I also created community pages for LaunchCode’s collaboration with TechHire, a government initiative. Finally, I created mockups for the education platform and implemented them in Bootstrap/CSS."
 },{
   title: "Webmaster",
   company: "IDEA Labs Incubator",
   location: "St. Louis",
   date: "October 2015 - present",
-  description: "As webmaster of the IDEA Labs National network, I redesigned the network website (idealabsincubator.org) in order to make it more user friendly and attract more sponsors. I attended weekly board meetings and collaborated with the leadership to individually manage the server, domains, email along with front-end website. I am currently working witht the leadership to change the focus of idealabs from being a local chapter to a national network of groups.",
+  description: "As webmaster of the IDEA Labs National network, I redesigned the network website (idealabsincubator.org) in order to make it more user friendly and attract more sponsors. I attended weekly board meetings and collaborated with the leadership to individually manage the server, domains, email along with front-end website. I am currently working with the leadership to change the focus of idealabs from being a local chapter to a national network of groups.",
   link: ""
 },{
   title: "TA for Introduction to Computer Science",
