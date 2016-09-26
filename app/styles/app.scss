@@ -11,10 +11,10 @@ $dark-gray: #353535;
 
 /* Fonts */
 
-@font-face{
-    font-family: "Avenir Book";
-    src: url(../fonts/AvenirLTStd-Book.otf);
-}
+// @font-face{
+//     font-family: "Avenir Book";
+//     src: url(../fonts/AvenirLTStd-Book.otf);
+// }
 
 html,
 body {
@@ -150,17 +150,17 @@ h4 {
     font-size: 15px;
   }
   .experience-card{
-    padding: 10px;
-    background-color: #ffeceb;
-    border-radius: 1px;
-    transition: background-color 1s;
+    transition: color 1s;
     font-weight: 300;
-    font-size: 18px;
-    &:hover, .active-experience{
-      box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    padding-right: 15px;
+    &:hover{
       cursor: pointer;
-      background-color: #ffcdca;
+      color: $orange;
     }
+  }
+  .active-experience{
+    color: $orange;
   }
 }
 
@@ -201,11 +201,11 @@ h4 {
   width: 75px;
   height: 75px;
   margin: 25px auto;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
+  filter: grayscale(70%);
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
   transition-property: grayscale, filter, -webkit-filter, -o-filter;
-  transition-duration: 0.7s;
+  transition-duration: 1s;
   &:hover {
     filter: grayscale(0);
     -webkit-filter: grayscale(0%);
@@ -268,10 +268,7 @@ h4 {
 }
 
 .education-card{
-  /*width: 400px;*/
   padding: 10px;
-  /*display: inline-block;*/
-  /*background-color: #32a26a;*/
 }
 
 .header-text{
@@ -286,7 +283,8 @@ h4 {
 }
 
 .white {
-  color: white;
+  color: black;
+  opacity: 0;
 }
 
 .bb-15{
@@ -305,3 +303,7 @@ h4 {
     margin-top: 30px;
 }
 
+.footer{
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
